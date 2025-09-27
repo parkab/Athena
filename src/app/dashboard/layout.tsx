@@ -1,4 +1,4 @@
-import { UserButton } from '@clerk/nextjs';
+// import { UserButton } from '@clerk/nextjs'; // Uncomment after adding valid Clerk keys
 import Link from 'next/link';
 
 export default function DashboardLayout({
@@ -40,7 +40,11 @@ export default function DashboardLayout({
               </div>
             </div>
             <div className="flex items-center">
-              <UserButton afterSignOutUrl="/" />
+              {/* Demo user button - replace with Clerk UserButton after setup */}
+              <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
+                <span className="text-white text-sm font-medium">U</span>
+              </div>
+              {/* <UserButton afterSignOutUrl="/" /> */}
             </div>
           </div>
         </div>

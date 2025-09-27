@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { SignInButton, SignUpButton, SignedIn, SignedOut } from '@clerk/nextjs';
+// import { SignInButton, SignUpButton, SignedIn, SignedOut } from '@clerk/nextjs'; // Uncomment after adding valid Clerk keys
 
 export default function Home() {
   return (
@@ -14,6 +14,17 @@ export default function Home() {
         </p>
         
         <div className="flex gap-4 justify-center mb-12">
+          {/* Demo buttons - replace with Clerk components after adding valid keys */}
+          <Link href="/dashboard">
+            <button className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+              View Dashboard (Demo)
+            </button>
+          </Link>
+          <button className="border border-blue-600 text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors">
+            Sign In (Requires Clerk Setup)
+          </button>
+          
+          {/* Uncomment after adding valid Clerk keys:
           <SignedOut>
             <SignUpButton mode="modal">
               <button className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
@@ -34,6 +45,7 @@ export default function Home() {
               </button>
             </Link>
           </SignedIn>
+          */}
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 mt-16">

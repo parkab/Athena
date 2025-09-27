@@ -1,17 +1,17 @@
-import { currentUser } from '@clerk/nextjs';
+// import { auth } from '@clerk/nextjs/server'; // Uncomment after adding valid Clerk keys
 import Link from 'next/link';
 
 export default async function Dashboard() {
-  const user = await currentUser();
+  // await auth(); // Ensure user is authenticated - Uncomment after adding valid Clerk keys
 
   return (
     <div className="px-4 sm:px-0">
       <div className="mb-8">
         <h1 className="text-3xl font-bold text-gray-900">
-          Welcome back, {user?.firstName || 'there'}!
+          Welcome back!
         </h1>
         <p className="mt-2 text-gray-600">
-          Here's your personal growth dashboard
+          Here&apos;s your personal growth dashboard
         </p>
       </div>
 

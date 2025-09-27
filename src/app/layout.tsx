@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { ClerkProvider } from '@clerk/nextjs';
+// import { ClerkProvider } from '@clerk/nextjs'; // Uncomment after adding valid Clerk keys
 import localFont from "next/font/local";
 import "./globals.css";
 
@@ -25,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ClerkProvider>
+    // <ClerkProvider> {/* Uncomment after adding valid Clerk keys */}
       <html lang="en">
         <body
           className={`${geistSans.variable} ${geistMono.variable} antialiased`}
@@ -33,6 +33,6 @@ export default function RootLayout({
           {children}
         </body>
       </html>
-    </ClerkProvider>
+    // </ClerkProvider> {/* Uncomment after adding valid Clerk keys */}
   );
 }

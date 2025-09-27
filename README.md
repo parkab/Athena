@@ -71,6 +71,13 @@ Before running this application, make sure you have:
 
    Open [http://localhost:3000](http://localhost:3000) to view the application.
 
+6. **Build for production**
+   ```bash
+   npm run build
+   ```
+   
+   **Note**: Building for production requires valid Clerk authentication keys. The project includes placeholder keys in `.env.example` for development setup, but you'll need real keys from your Clerk dashboard for production builds.
+
 ## 🗄 Database Schema
 
 The application uses the following main models:
